@@ -1,0 +1,474 @@
+body, html {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  overflow-x: hidden;
+  color: #111;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.logos-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px 0 10px;
+  flex-wrap: wrap;
+}
+
+/* Circular company logos */
+.company-logos {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.company-logos img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Amplora logo with text */
+.product-logo img {
+  height: 50px;
+  object-fit: contain;
+}
+
+
+header h1 span {
+  color: #1e90ff;
+}
+
+header p {
+  max-width: 600px;
+  margin: 20px auto 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.form-section {
+  background: #fff;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  margin-top: 0px;
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.credibility-line {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.form-section form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.form-section form button {
+  width: 100%;
+  padding: 12px;
+  background: #1e90ff;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-section form button:hover {
+  background: #0d6efd;
+}
+
+.benefits-section {
+  max-width: 700px;
+  width: 100%;
+  margin: 30px auto;
+  text-align: left;
+  padding: 0 15px;
+}
+
+.benefits-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #111;
+  text-align: center;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: center;
+  width: fit-content;
+  gap: 15px;
+}
+
+.benefit-item {
+  display: flex;
+  justify-self: center;
+  justify-content: start;
+  align-items: center;
+  align-self: center;
+  align-items: center;
+  text-align: left;
+  gap: 5px;
+  background-color: #f0f4ff;
+  border-radius: 9px;
+  width: 100%;
+  padding: 10px 16px;
+}
+
+.benefit-item .icon {
+  font-size: 1.8rem;
+  color: #1e90ff;
+  flex-shrink: 0;
+}
+
+.benefit-text {
+  font-size: 0.95rem;
+  color: #2b2a2a;
+  line-height: 1.4;
+}
+
+.benefit-text strong {
+  color: #111;
+}
+
+
+
+
+/* ====== MOBILE RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .logos-section {
+    gap: 30px;
+    flex-direction: column;
+  }
+  .company-logos img,
+  .product-logo img {
+    height: 45px;
+  }
+  header {
+    padding: 40px 15px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .form-section {
+    max-width: 90%;
+    padding: 25px;
+    margin: 30px auto;
+  }
+
+  .form-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-section form input {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+  }
+
+  .form-section form button {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+.benefits-section {
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.benefits-section h3 {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+  color: #111;
+}
+
+.benefits-cards {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.benefit-card {
+  background: #fff;
+  padding: 15px 15px; /* reduced padding */
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+  width: 220px; /* smaller width */
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.benefit-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.benefit-card .icon {
+  font-size: 1.8rem; /* slightly smaller */
+  margin-bottom: 10px;
+}
+
+.benefit-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #1e90ff;
+}
+
+.benefit-card p {
+  font-size: 0.9rem; /* smaller font */
+  color: #555;
+  line-height: 1.3;
+}
+  .benefits-section {
+    max-width: 90%;
+  }
+  .benefit-item .icon {
+    font-size: 1.6rem;
+  }
+  .benefit-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-logos {
+    gap: 5px;
+  }
+  .company-logos img,
+  .product-logo img {
+    height: 40px;
+    width: auto;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.95rem;
+  }
+
+  .form-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .form-section form input {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .form-section form button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .benefit-item {
+    gap: 10px;
+  }
+  .benefit-item .icon {
+    font-size: 1.4rem;
+  }
+  .benefit-text {
+    font-size: 0.85rem;
+  }
+}
+
+
+/* =======================
+   Confirmation Page Styles
+   ======================= */
+
+.confirmation-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #f8fafc, #e8eef5);
+  padding: 2rem;
+}
+
+.confirmation-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 3rem 3.5rem;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e8f0fe;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+}
+
+.mail-icon {
+  font-size: 2rem;
+}
+
+.confirmation-title {
+  font-size: 1.9rem;
+  color: #1a1a1a;
+  margin-bottom: 1.2rem;
+}
+
+.confirmation-text {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.check-inbox-section {
+  text-align: left;
+  background: #f8faff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.check-inbox-section h2 {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  margin-bottom: 0.8rem;
+}
+
+.check-inbox-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.check-inbox-section li {
+  margin-bottom: 0.7rem;
+  color: #444;
+  font-size: 1rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.check-inbox-section li::before {
+  content: "•";
+  color: #0077ff;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.while-you-wait {
+  margin-bottom: 2rem;
+}
+
+.while-you-wait h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.8rem;
+  color: #1a1a1a;
+}
+
+.while-you-wait p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.footer {
+  font-size: 0.95rem;
+  color: #666;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.brand {
+  color: #0077ff;
+  font-weight: 600;
+}
+
+/* =======================
+   Responsive Design
+   ======================= */
+@media (max-width: 768px) {
+  .confirmation-card {
+    padding: 2rem;
+  }
+
+  .confirmation-title {
+    font-size: 1.6rem;
+  }
+
+  .confirmation-text,
+  .while-you-wait p,
+  .check-inbox-section li {
+    font-size: 0.95rem;
+  }
+
+  .check-inbox-section {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .confirmation-card {
+    padding: 1.5rem;
+  }
+
+  .confirmation-title {
+    font-size: 1.4rem;
+  }
+
+  .confirmation-text {
+    font-size: 0.9rem;
+  }
+
+  .while-you-wait h2,
+  .check-inbox-section h2 {
+    font-size: 1.05rem;
+  }
+
+  .mail-icon {
+    font-size: 1.8rem;
+  }
+
+  .footer {
+    font-size: 0.85rem;
+  }
+}
+
+
